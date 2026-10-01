@@ -1,0 +1,32 @@
+package br.com.fiapride.model;
+
+import br.com.fiapride.model.Garrafa;
+
+public class SistemaPrincipal {
+
+    public static void main(String[] args) {
+
+        // Instância 1: a minha garrafa
+        Garrafa minhaGarrafa = new Garrafa();
+        minhaGarrafa.cor = "Azul";
+        minhaGarrafa.quantidadeEmML = 500;
+        minhaGarrafa.material = "Plástico";
+
+        // Instância 2: a garrafa do professor
+        Garrafa garrafaDoProfessor = new Garrafa();
+        garrafaDoProfessor.cor = "Metálica";
+        garrafaDoProfessor.quantidadeEmML = 750;
+        garrafaDoProfessor.material = "Alumínio";
+
+        // Exibindo os dados no Console
+        System.out.println("--- Minha garrafa ---");
+        System.out.println("Cor: " + minhaGarrafa.cor);
+        System.out.println("Quantidade: " + minhaGarrafa.quantidadeEmML + " ml");
+        System.out.println("Material: " + minhaGarrafa.material);
+
+        System.out.println("--- Garrafa do professor ---");
+        System.out.println("Cor: " + garrafaDoProfessor.cor);
+        System.out.println("Quantidade: " + garrafaDoProfessor.quantidadeEmML + " ml");
+        System.out.println("Material: " + garrafaDoProfessor.material);
+    }
+}
