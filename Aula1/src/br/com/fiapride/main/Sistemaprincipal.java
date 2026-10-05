@@ -5,27 +5,21 @@ import br.com.fiapride.model.Garrafa;
 public class Sistemaprincipal {
 
     public static void main(String[] args) {
-
+    	
+        // Instanciando a garrafa
         Garrafa minhaGarrafa = new Garrafa();
-        minhaGarrafa.cor = "Azul";
-        minhaGarrafa.quantidadeEmML = 500;
-        minhaGarrafa.material = "Plástico";
+        minhaGarrafa.setCor("Azul");
+        minhaGarrafa.setMaterial("Plástico");
+        minhaGarrafa.setQuantidadeEmML(0); // Começa vazia
 
-        // Instância 2: a garrafa do professor
-        Garrafa garrafaDoProfessor = new Garrafa();
-        garrafaDoProfessor.cor = "Metálica";
-        garrafaDoProfessor.quantidadeEmML = 750;
-        garrafaDoProfessor.material = "Alumínio";
+        System.out.println("=== TESTANDO A GARRAFA ===");
 
-        // Exibindo os dados no Console
-        System.out.println("--- Minha garrafa ---");
-        System.out.println("Cor: " + minhaGarrafa.cor);
-        System.out.println("Quantidade: " + minhaGarrafa.quantidadeEmML + " ml");
-        System.out.println("Material: " + minhaGarrafa.material);
+        // Executando operações válidas
+        minhaGarrafa.encherGarrafa(500);
+        minhaGarrafa.beberAgua(200);
 
-        System.out.println("--- Garrafa do professor ---");
-        System.out.println("Cor: " + garrafaDoProfessor.cor);
-        System.out.println("Quantidade: " + garrafaDoProfessor.quantidadeEmML + " ml");
-        System.out.println("Material: " + garrafaDoProfessor.material);
+        // Executando operações inválidas para testar as regras de negócio
+        minhaGarrafa.beberAgua(400); // Erro: quantidade insuficiente
+        minhaGarrafa.encherGarrafa(-50); // Erro: valor inválido
     }
 }

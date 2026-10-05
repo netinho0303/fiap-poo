@@ -47,3 +47,62 @@
 2026-10-01 19:44:20.517: [INFO] BookmarksLoadDropped droppedNodes=0
 2026-10-01 19:44:20.517: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
 2026-10-01 20:24:10.765: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-05 11:40:40.350: [INFO] CurrentProfilePath: C:\Users\dluca\Downloads\Aula1111\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-10-05 11:40:40.350: [INFO] Profiles total count: 1
+2026-10-05 11:40:40.352: [INFO] Profile: name=Perfil 1 path=C:\Users\dluca\Downloads\Aula1111\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-10-01T19:44:20.640Z
+2026-10-05 11:40:40.352: [INFO] LastUsedProfileDir: C:\Users\dluca\Downloads\Aula1111\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-10-05 11:40:40.352: [INFO] MostRecentlyActiveProfile: name=Perfil 1 path=C:\Users\dluca\Downloads\Aula1111\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-10-01T19:44:20.640Z
+2026-10-05 11:40:40.352: [INFO] OnDoneLoading sync enabled: 0
+2026-10-05 11:40:40.352: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-05 11:40:40.352: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-05 11:40:40.352: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-05 11:40:43.977: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-05 12:16:45.444: [INFO] CurrentProfilePath: C:\Users\dluca\Downloads\Aula1111\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-10-05 12:16:45.444: [INFO] Profiles total count: 1
+2026-10-05 12:16:45.446: [INFO] Profile: name=Perfil 1 path=C:\Users\dluca\Downloads\Aula1111\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-10-01T19:44:20.640Z
+2026-10-05 12:16:45.446: [INFO] LastUsedProfileDir: C:\Users\dluca\Downloads\Aula1111\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-10-05 12:16:45.446: [INFO] MostRecentlyActiveProfile: name=Perfil 1 path=C:\Users\dluca\Downloads\Aula1111\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-10-01T19:44:20.640Z
+2026-10-05 12:16:45.446: [INFO] OnDoneLoading sync enabled: 0
+2026-10-05 12:16:45.446: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-05 12:16:45.446: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-05 12:16:45.446: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-05 12:24:20.818: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-05 13:19:33.543: [INFO] CurrentProfilePath: C:\Users\dluca\Downloads\Aula1111\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-10-05 13:19:33.543: [INFO] Profiles total count: 1
+2026-10-05 13:19:33.544: [INFO] Profile: name=Perfil 1 path=C:\Users\dluca\Downloads\Aula1111\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-10-01T19:44:20.640Z
+2026-10-05 13:19:33.544: [INFO] LastUsedProfileDir: C:\Users\dluca\Downloads\Aula1111\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-10-05 13:19:33.544: [INFO] MostRecentlyActiveProfile: name=Perfil 1 path=C:\Users\dluca\Downloads\Aula1111\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-10-01T19:44:20.640Z
+2026-10-05 13:19:33.544: [INFO] OnDoneLoading sync enabled: 0
+2026-10-05 13:19:33.544: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-05 13:19:33.544: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-05 13:19:33.544: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-05 13:23:09.926: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-05 13:23:13.646: [INFO] CurrentProfilePath: C:\Users\dluca\Downloads\Aula1111\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-10-05 13:23:13.646: [INFO] Profiles total count: 1
+2026-10-05 13:23:13.647: [INFO] Profile: name=Perfil 1 path=C:\Users\dluca\Downloads\Aula1111\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-10-05T13:23:07.002Z
+2026-10-05 13:23:13.647: [INFO] LastUsedProfileDir: C:\Users\dluca\Downloads\Aula1111\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-10-05 13:23:13.647: [INFO] MostRecentlyActiveProfile: name=Perfil 1 path=C:\Users\dluca\Downloads\Aula1111\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-10-05T13:23:07.002Z
+2026-10-05 13:23:13.647: [INFO] OnDoneLoading sync enabled: 0
+2026-10-05 13:23:13.647: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-05 13:23:13.647: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-05 13:23:13.647: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-05 13:23:21.532: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-05 13:23:36.307: [INFO] CurrentProfilePath: C:\Users\dluca\Downloads\Aula1111\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-10-05 13:23:36.307: [INFO] Profiles total count: 1
+2026-10-05 13:23:36.308: [INFO] Profile: name=Perfil 1 path=C:\Users\dluca\Downloads\Aula1111\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-10-05T13:23:14.222Z
+2026-10-05 13:23:36.308: [INFO] LastUsedProfileDir: C:\Users\dluca\Downloads\Aula1111\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-10-05 13:23:36.308: [INFO] MostRecentlyActiveProfile: name=Perfil 1 path=C:\Users\dluca\Downloads\Aula1111\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-10-05T13:23:14.222Z
+2026-10-05 13:23:36.308: [INFO] OnDoneLoading sync enabled: 0
+2026-10-05 13:23:36.308: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-05 13:23:36.308: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-05 13:23:36.308: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-05 13:32:42.488: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-05 13:33:06.768: [INFO] CurrentProfilePath: C:\Users\dluca\Downloads\Aula1111\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-10-05 13:33:06.768: [INFO] Profiles total count: 1
+2026-10-05 13:33:06.770: [INFO] Profile: name=Perfil 1 path=C:\Users\dluca\Downloads\Aula1111\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-10-05T13:32:42.202Z
+2026-10-05 13:33:06.770: [INFO] LastUsedProfileDir: C:\Users\dluca\Downloads\Aula1111\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-10-05 13:33:06.770: [INFO] MostRecentlyActiveProfile: name=Perfil 1 path=C:\Users\dluca\Downloads\Aula1111\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-10-05T13:32:42.202Z
+2026-10-05 13:33:06.770: [INFO] OnDoneLoading sync enabled: 0
+2026-10-05 13:33:06.770: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-05 13:33:06.770: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-05 13:33:06.770: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
