@@ -2,41 +2,51 @@ package br.com.fiapride.model;
 
 public class Garrafa {
 
-    // Atributos (privados, conforme o diagrama)
+    // Capacidade máxima da garrafa (regra de negócio)
+    private static final int CAPACIDADE_MAXIMA_ML = 3000;
+
+    // ATRIBUTOS: todos privados
     private String cor;
     private int quantidadeEmML;
     private String material;
 
-    // Método: Encher a garrafa
-    public void encherGarrafa(int quantidade) {
-        // Regra de negócio: A quantidade deve ser positiva
-        if (quantidade <= 0) {
-            System.out.println("Erro: A quantidade para encher deve ser maior que zero.");
-            return;
-        }
-        this.quantidadeEmML += quantidade;
-        System.out.println("Garrafa reabastecida com " + quantidade + " ml. Total atual: " + this.quantidadeEmML + " ml.");
+    // CONSTRUTOR: toda garrafa nasce com cor e material, e vazia
+    public Garrafa(String cor, String material) {
+        this.setCor(cor);
+        this.setMaterial(material);
+        this.setQuantidadeEmML(0);
     }
 
-    // Método: Beber água da garrafa
+    // ========== COMPORTAMENTOS (regras de negócio) ==========
+
     public void beberAgua(int quantidade) {
-        // Regra de negócio: A quantidade deve ser positiva
         if (quantidade <= 0) {
-            System.out.println("Erro: A quantidade consumida deve ser maior que zero.");
-            return;
+            System.out.println("Erro: informe uma quantidade maior que zero para beber.");
+        } else if (quantidade > this.quantidadeEmML) {
+            System.out.println("Erro: a garrafa só tem " + this.quantidadeEmML
+                    + "ml, não dá para beber " + quantidade + "ml!");
+        } else {
+            this.setQuantidadeEmML(this.quantidadeEmML - quantidade);
+            System.out.println("Você bebeu " + quantidade + "ml. Restam " + this.quantidadeEmML + "ml.");
         }
-        // Regra de negócio: Não é possível beber mais do que o disponível
-        if (this.quantidadeEmML < quantidade) {
-            System.out.println("Erro: Quantidade insuficiente de água na garrafa. Conteúdo atual: " + this.quantidadeEmML + " ml.");
-            return;
-        }
-        this.quantidadeEmML -= quantidade;
-        System.out.println("Você bebeu " + quantidade + " ml. Restante na garrafa: " + this.quantidadeEmML + " ml.");
     }
 
-    // Getters e Setters
+    public void encherGarrafa(int quantidade) {
+        if (quantidade <= 0) {
+            System.out.println("Erro: informe uma quantidade maior que zero para encher.");
+        } else if (this.quantidadeEmML + quantidade > CAPACIDADE_MAXIMA_ML) {
+            System.out.println("Erro: a garrafa transbordaria! Capacidade máxima: "
+                    + CAPACIDADE_MAXIMA_ML + "ml.");
+        } else {
+            this.setQuantidadeEmML(this.quantidadeEmML + quantidade);
+            System.out.println("Garrafa enchida com " + quantidade + "ml. Total: " + this.quantidadeEmML + "ml.");
+        }
+    }
+
+    // ========== GETTERS E SETTERS ==========
+
     public String getCor() {
-        return cor;
+        return this.cor;
     }
 
     public void setCor(String cor) {
@@ -44,15 +54,21 @@ public class Garrafa {
     }
 
     public int getQuantidadeEmML() {
-        return quantidadeEmML;
+        return this.quantidadeEmML;
     }
 
-    public void setQuantidadeEmML(int quantidadeEmML) {
-        this.quantidadeEmML = quantidadeEmML;
+    // REGRA ESPECIAL: não aceita valores menores que 0 nem maiores que 3000 ml
+    public void setQuantidadeEmML(int quantidade) {
+        if (quantidade >= 0 && quantidade <= CAPACIDADE_MAXIMA_ML) {
+            this.quantidadeEmML = quantidade;
+        } else {
+            System.out.println("Erro de Segurança: quantidade inválida (" + quantidade
+                    + "ml). Deve estar entre 0 e " + CAPACIDADE_MAXIMA_ML + "ml.");
+        }
     }
 
     public String getMaterial() {
-        return material;
+        return this.material;
     }
 
     public void setMaterial(String material) {

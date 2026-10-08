@@ -7,7 +7,7 @@ public class Sistemaprincipal {
     public static void main(String[] args) {
     	
         // Instanciando a garrafa
-        Garrafa minhaGarrafa = new Garrafa();
+        Garrafa minhaGarrafa = new Garrafa(null, null);
         minhaGarrafa.setCor("Azul");
         minhaGarrafa.setMaterial("Plástico");
         minhaGarrafa.setQuantidadeEmML(0); // Começa vazia
