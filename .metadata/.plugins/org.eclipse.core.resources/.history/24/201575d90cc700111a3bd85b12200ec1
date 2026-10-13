@@ -1,0 +1,23 @@
+package main; // ajuste para o pacote do seu projeto pessoal
+
+import model.Garrafa;
+
+public class TesteMeuObjeto {
+    public static void main(String[] args) {
+
+        // TESTE 1: A forma correta (Nascimento legalizado)
+        Garrafa minhaGarrafa = new Garrafa("Azul", "Vidro");
+
+        System.out.println("Cor: " + minhaGarrafa.getCor());
+        System.out.println("Material: " + minhaGarrafa.getMaterial());
+
+        // TESTE 2: Ação pública que passa pela validação
+        minhaGarrafa.pintar("Verde");
+        minhaGarrafa.pintar("   "); // inválida: cor continua Verde
+
+        // TESTE 3: Tentando burlar o sistema (Descomente a linha abaixo)
+        // Garrafa garrafaFantasma = new Garrafa();
+        // ERRO DE COMPILAÇÃO: "The constructor Garrafa() is undefined"
+        // Ao criar um construtor com regras, o Java remove o construtor vazio padrão.
+    }
+}

@@ -1,0 +1,21 @@
+package br.com.fiapride.model;
+
+
+public class Garrafa {
+	private String cor;
+	private String material;
+	private int quantidadeEmML;
+	
+	// CONSTRUTOR CUSTOMIZADO
+	
+	public Garrafa(String cor, String material) {
+		
+		this.cor = cor;
+		this.material = material;
+		this.quantidadeEmML = 0;
+		
+		
+		
+		
+	}
+}
