@@ -1,37 +1,21 @@
 package br.com.fiapride.main;
 
 import br.com.fiapride.model.Garrafa;
+import br.com.fiapride.model.Tampa;
 
 public class TesteGarrafa {
 
     public static void main(String[] args) {
 
-        System.out.println("--- Teste do Meu Projeto Pessoal: Garrafa ---\n");
+        //Criamos a tampa primeiro
+        Tampa br.com.fiapride.model.Tampa minhaTampa = new Tampa("Preta", "Plástico");
 
-        // 1. Instanciando com o construtor
-        Garrafa minhaGarrafa = new Garrafa("Azul", "Aço inoxidável");
+        //Criamos a garrafa associando a tampa
+        Garrafa minhaGarrafa = new Garrafa("Azul", "Inox", minhaTampa);
 
-        // 2. Lendo os dados com os Getters
-        System.out.println("Cor: " + minhaGarrafa.getCor());
-        System.out.println("Material: " + minhaGarrafa.getMaterial());
-        System.out.println("Quantidade: " + minhaGarrafa.getQuantidadeEmML() + "ml");
+         //o material da tampa através da garrafa
+        System.out.println("Garrafa cor: " + minhaGarrafa.getCor());
+        System.out.println("Material da tampa: " + minhaGarrafa.getTampa().getMaterial());
 
-        // 3. Testando comportamentos
-        System.out.println("\n--- Enchendo e bebendo ---");
-        minhaGarrafa.encherGarrafa(500);
-        minhaGarrafa.beberAgua(200);
-
-        // 4. Tentando BURLAR o sistema 
-        System.out.println("\n--- Tentando burlar as regras ---");
-        minhaGarrafa.beberAgua(1000);          
-        minhaGarrafa.encherGarrafa(5000);     
-        minhaGarrafa.setQuantidadeEmML(-50);   
-        minhaGarrafa.setQuantidadeEmML(9999);  
-        
-        
-        
-        
-        System.out.println("\n--- Estado final ---");
-        System.out.println("Quantidade: " + minhaGarrafa.getQuantidadeEmML() + "ml");
     }
 }

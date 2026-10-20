@@ -2,67 +2,40 @@ package br.com.fiapride.model;
 
 public class Garrafa {
 
-    // Atributos privados (Encapsulamento)
     private String cor;
     private String material;
+    private int quantidadeEmML;
 
-    // CONSTRUTOR: mesmo nome da classe, sem tipo de retorno
-    public Garrafa(String cor, String material) {
+    // A Garrafa tem uma Tampa
+    private Tampa tampa;
 
-    	this.setCor(cor);
-        this.setMaterial(material);
-        System.out.println("Garrafa criada: " + this.cor + " de " + this.material);
+    // Construtor
+    public Garrafa(String cor, String material, Tampa tampa) {
+        this.cor = cor;
+        this.material = material;
+        this.tampa = tampa;
+        this.quantidadeEmML = 0;
     }
 
-    // Getters
-    public String getCor() {
-        return this.cor;
+    // Getter para acessar a Tampa
+    public Tampa getTampa() {
+        return this.tampa;
     }
-
-    public String getMaterial() {
-        return this.material;
-    }
-
-    // Setters privados com validação
-    private void setCor(String cor) {
-        if (cor != null && !cor.trim().isEmpty()) {
-            this.cor = cor;
-        } else {
-            System.out.println("Erro de Validação: a cor informada é inválida!");
-        }
-    }
-
-    private void setMaterial(String material) {
-        if (material != null && !material.trim().isEmpty()) {
-            this.material = material;
-        } else {
-            System.out.println("Erro de Validação: o material informado é inválido!");
-        }
-    }
-
-	public void encherGarrafa(int i) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	public String getQuantidadeEmML() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	
-	public void beberAgua(int i) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	public void setQuantidadeEmML(int i) {
-		// TODO Auto-generated method stub
-		
-	}
 
 	public void pintar(String string) {
 		// TODO Auto-generated method stub
 		
 	}
+
+	public String getMaterial() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public String getCor() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+    
 }

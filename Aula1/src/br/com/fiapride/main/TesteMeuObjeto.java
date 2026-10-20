@@ -6,7 +6,7 @@ public class TesteMeuObjeto {
     public static void main(String[] args) {
 
         // TESTE 1: A forma correta (Nascimento legalizado)
-        Garrafa minhaGarrafa = new Garrafa("Azul", "Vidro");
+        Garrafa minhaGarrafa = new Garrafa("Azul", "Vidro", null);
 
         System.out.println("Cor: " + minhaGarrafa.getCor());
         System.out.println("Material: " + minhaGarrafa.getMaterial());
