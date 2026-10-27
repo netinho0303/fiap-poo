@@ -1,21 +1,28 @@
+
 package br.com.fiapride.main;
 
-import br.com.fiapride.model.Garrafa;
+import br.com.fiapride.model.GarrafaTermica;
+import br.com.fiapride.model.GarrafaEletrica;
 import br.com.fiapride.model.Tampa;
 
 public class TesteGarrafa {
 
     public static void main(String[] args) {
 
-        //Criamos a tampa primeiro
-        Tampa br.com.fiapride.model.Tampa minhaTampa = new Tampa("Preta", "Plástico");
+        Tampa minhaTampa = new Tampa("Preta", "Plástico");
 
-        //Criamos a garrafa associando a tampa
-        Garrafa minhaGarrafa = new Garrafa("Azul", "Inox", minhaTampa);
+        // Instanciando as subclasses
+        GarrafaTermica minhaTermica = new GarrafaTermica("Inox", "Metal", minhaTampa, 12);
 
-         //o material da tampa através da garrafa
-        System.out.println("Garrafa cor: " + minhaGarrafa.getCor());
-        System.out.println("Material da tampa: " + minhaGarrafa.getTampa().getMaterial());
+        GarrafaEletrica minhaEletrica = new GarrafaEletrica("Preta", "Plástico", minhaTampa, 110);
 
+        // As classes filhas utilizam métodos da classe mãe (Garrafa) por herança!
+        minhaTermica.encherGarrafa(500);
+
+        System.out.println("Garrafa Térmica conserva por: " + minhaTermica.getConservacaoHoras() + " horas.");
+
+        minhaEletrica.encherGarrafa(1000);
+
+        System.out.println("Voltagem da Garrafa Elétrica: " + minhaEletrica.getVoltagem() + "V.");
     }
 }
