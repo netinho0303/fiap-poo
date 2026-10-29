@@ -4,13 +4,12 @@ import br.com.fiapride.model.*;
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings("unused")
 public class TesteGarrafa {
 
     public static void main(String[] args) {
 
-        Tampa tampaPadrao = new Tampa("Preta", "Plástico");
+        new ArrayList<>();
 
-        // 1. Lista do tipo da MÃE (Garrafa) que aceita qualquer filha
-        List<Garrafa> garrafas = new ArrayList<>();
     }
 }
