@@ -1,21 +1,41 @@
 package br.com.fiapride.model;
 
-public class Garrafa {
 
+public abstract class Garrafa {
+
+    private String cor;
+    private String material;
+    private int quantidadeEmML;
+    private Tampa tampa; 
     
 
-    // MÉTODOS PARA SOBRESCRITA (Contrato)
-    public String conservarLiquido() {
-        return "Mantendo o líquido em temperatura ambiente.";
+    // O Construtor continua existindo 
+    public Garrafa(String cor, String material, Tampa tampa) {
+        this.cor = cor;
+        this.material = material;
+        this.tampa = tampa;
+        this.quantidadeEmML = 0;
     }
 
-	public String getMaterial() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+    // 2. MÉTODO ABSTRATO (Sem corpo, OBRIGA as filhas concretas a implementarem)
+    public abstract void exibirTipo();
 
-	public void pintar(String string) {
-		// TODO Auto-generated method stub
-		
-	}
+    
+    public String getCor() {
+        return this.cor;
+    }
+
+    public String getMaterial() {
+        return this.material;
+    }
+
+    public int getQuantidadeEmML() {
+        return this.quantidadeEmML;
+    }
+
+    public Tampa getTampa() {
+        return this.tampa;
+    }
+
+	public abstract void pintar(String string);
 }
