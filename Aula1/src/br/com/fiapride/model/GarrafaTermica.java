@@ -1,25 +1,16 @@
-
 package br.com.fiapride.model;
 
 public class GarrafaTermica extends Garrafa {
 
-    // Atributo exclusivo da classe filha
     private int conservacaoHoras;
 
-    // Construtor da classe filha
     public GarrafaTermica(String cor, String material, Tampa tampa, int conservacaoHoras) {
-        // Chama o construtor da classe Garrafa
-        super(cor, material, tampa);
-
+        super();
         this.conservacaoHoras = conservacaoHoras;
     }
 
-    public int getConservacaoHoras() {
-        return this.conservacaoHoras;
+  // Avisa o Java que você está reescrevendo o método da mãe
+    public String conservarLiquido() {
+        return "Conservando líquido quente/frio por " + this.conservacaoHoras + " horas isolado a vácuo.";
     }
-
-	public void encherGarrafa(int i) {
-		// TODO Auto-generated method stub
-		
-	}
 }

@@ -1,28 +1,16 @@
-
 package br.com.fiapride.main;
 
-import br.com.fiapride.model.GarrafaTermica;
-import br.com.fiapride.model.GarrafaEletrica;
-import br.com.fiapride.model.Tampa;
+import br.com.fiapride.model.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class TesteGarrafa {
 
     public static void main(String[] args) {
 
-        Tampa minhaTampa = new Tampa("Preta", "Plástico");
+        Tampa tampaPadrao = new Tampa("Preta", "Plástico");
 
-        // Instanciando as subclasses
-        GarrafaTermica minhaTermica = new GarrafaTermica("Inox", "Metal", minhaTampa, 12);
-
-        GarrafaEletrica minhaEletrica = new GarrafaEletrica("Preta", "Plástico", minhaTampa, 110);
-
-        // As classes filhas utilizam métodos da classe mãe (Garrafa) por herança!
-        minhaTermica.encherGarrafa(500);
-
-        System.out.println("Garrafa Térmica conserva por: " + minhaTermica.getConservacaoHoras() + " horas.");
-
-        minhaEletrica.encherGarrafa(1000);
-
-        System.out.println("Voltagem da Garrafa Elétrica: " + minhaEletrica.getVoltagem() + "V.");
+        // 1. Lista do tipo da MÃE (Garrafa) que aceita qualquer filha
+        List<Garrafa> garrafas = new ArrayList<>();
     }
 }

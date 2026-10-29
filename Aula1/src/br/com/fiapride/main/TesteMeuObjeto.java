@@ -6,9 +6,9 @@ public class TesteMeuObjeto {
     public static void main(String[] args) {
 
         // TESTE 1: A forma correta (Nascimento legalizado)
-        Garrafa minhaGarrafa = new Garrafa("Azul", "Vidro", null);
+        Garrafa minhaGarrafa = new Garrafa();
 
-        System.out.println("Cor: " + minhaGarrafa.getCor());
+        System.out.println("Cor: " + minhaGarrafa.getClass());
         System.out.println("Material: " + minhaGarrafa.getMaterial());
 
         // TESTE 2: Ação pública que passa pela validação

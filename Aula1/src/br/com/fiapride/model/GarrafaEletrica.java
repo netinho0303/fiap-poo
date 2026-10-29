@@ -1,24 +1,16 @@
-
 package br.com.fiapride.model;
 
 public class GarrafaEletrica extends Garrafa {
 
-    // Atributo exclusivo
     private int voltagem;
 
-    // Construtor da classe filha
     public GarrafaEletrica(String cor, String material, Tampa tampa, int voltagem) {
-        super(cor, material, tampa);
-
+        super();
         this.voltagem = voltagem;
     }
 
-    public int getVoltagem() {
-        return this.voltagem;
+    @Override
+    public String conservarLiquido() {
+        return "Aquecendo ou resfriando ativamente o líquido ligado na tensão " + this.voltagem + "V.";
     }
-
-	public void encherGarrafa(int i) {
-		// TODO Auto-generated method stub
-		
-	}
 }

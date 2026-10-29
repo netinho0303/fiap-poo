@@ -1,0 +1,11 @@
+package br.com.fiapride.model;
+
+public class Garrafa {
+
+    
+
+    // MÉTODOS PARA SOBRESCRITA (Contrato)
+    public String conservarLiquido() {
+        return "Mantendo o líquido em temperatura ambiente.";
+    }
+}
